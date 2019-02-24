@@ -89,5 +89,10 @@ class ViewController: UIViewController {
     @objc func revertLabelColor() {
         self.answerLabel.backgroundColor = self.questionLabel.backgroundColor
     }
+    
+    // Disable rotation.
+    override open var shouldAutorotate: Bool {
+        return false
+    }
 }
 
